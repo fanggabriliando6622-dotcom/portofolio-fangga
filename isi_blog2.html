@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Belajar Web Development untuk Pemula</title>
+
+    <!-- Fonts & Icons -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <!-- Style -->
+    <style>
+        body {
+            font-family:'Poppins', sans-serif;
+            background:#eef2f6;
+            margin:0;
+            color:#333;
+        }
+
+        /* NAVBAR */
+        nav {
+            background:#1f2d3d;
+            padding:14px 30px;
+            display:flex;
+            justify-content:space-between;
+            align-items:center;
+            color:white;
+            box-shadow:0 4px 10px rgba(0,0,0,0.15);
+            position:sticky;
+            top:0;
+            z-index:100;
+        }
+        nav a {
+            color:white;
+            text-decoration:none;
+            margin-left:22px;
+            font-weight:500;
+            transition:0.3s;
+        }
+        nav a:hover { color:#ffc107; }
+
+        /* WRAPPER */
+        .content-wrapper {
+            width:90%;
+            max-width:1100px;
+            margin:40px auto;
+            background:white;
+            padding:45px;
+            border-radius:18px;
+            box-shadow:0 5px 35px rgba(0,0,0,0.07);
+        }
+
+        .article-header h1 {
+            font-size:32px;
+            margin-bottom:5px;
+            font-weight:700;
+        }
+
+        .meta {
+            color:#666;
+            font-size:14px;
+            margin-bottom:25px;
+        }
+
+        /* CONTENT LAYOUT */
+        .article-body {
+            display:flex;
+            gap:35px;
+            flex-wrap:wrap;
+        }
+
+        .article-body img {
+            width:38%;
+            min-width:260px;
+            border-radius:12px;
+            border:4px solid #e6eef3;
+            transition:0.4s;
+        }
+
+        .article-body img:hover {
+            transform:scale(1.03);
+        }
+
+        .text {
+            flex:1;
+            text-align:justify;
+            line-height:1.8;
+            font-size:16px;
+        }
+
+        .highlight {
+            background:#c8e9ff;
+            padding:6px 8px;
+            border-radius:6px;
+            font-weight:600;
+        }
+
+        h2 {
+            margin-top:35px;
+            color:#1f2d3d;
+            font-size:22px;
+        }
+
+        /* STEP SECTION */
+        .step {
+            margin-top:20px;
+            background:#f7fbff;
+            padding:20px;
+            border-radius:12px;
+            border-left:6px solid #0096c7;
+            transition:0.3s;
+        }
+
+        .step:hover { background:#e6f8ff; }
+
+        .step i {
+            color:#0096c7;
+            font-size:22px;
+            margin-right:10px;
+        }
+
+        /* TOOLS */
+        .tools {
+            display:grid;
+            grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+            gap:18px;
+            margin-top:20px;
+        }
+
+        .tool-box {
+            text-align:center;
+            background:#f7fbff;
+            border-radius:12px;
+            border:2px solid #dce7f2;
+            padding:18px;
+            transition:0.3s;
+        }
+
+        .tool-box i {
+            font-size:30px;
+            color:#ffb100;
+        }
+
+        .tool-box:hover {
+            background:#fff6dd;
+            border-color:#ffb100;
+            transform:translateY(-5px);
+        }
+
+        /* TIP */
+        .tip {
+            background:#e8ffe8;
+            padding:15px;
+            border-radius:10px;
+            border-left:6px solid #28a745;
+            margin-top:25px;
+        }
+
+        .button-wrap { margin-top:40px; text-align:center; }
+        .btn-back {
+            background:#1f2d3d;
+            color:white;
+            padding:12px 25px;
+            border-radius:10px;
+            text-decoration:none;
+            font-size:16px;
+            transition:0.3s;
+        }
+        .btn-back:hover { background:#000e1a; }
+
+        footer {
+            text-align:center;
+            padding:20px;
+            margin-top:50px;
+            color:#777;
+            font-size:14px;
+        }
+    </style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+    <div class="logo">🌍 Web Dev Blog</div>
+    <div>
+        <a href="index.html">Beranda</a>
+        <a href="#blog-section">Artikel</a>
+    </div>
+</nav>
+
+<!-- CONTENT -->
+<div class="content-wrapper">
+    <div class="article-header">
+        <h1>Belajar Web Development Untuk Pemula</h1>
+        <p class="meta">📅 3 Desember 2025 • ✍️ Fangga • ⭐ Tutorial</p>
+    </div>
+
+    <div class="article-body">
+        <img src="images/download (1).jpg">
+
+        <div class="text">
+            <p>
+                Web development adalah proses membangun website—from simple landing pages sampai sistem web complex seperti 
+                marketplace, aplikasi sekolah, hingga dashboard admin.
+            </p>
+
+            <p>
+                Untuk pemula, langkah pertama adalah memahami struktur web berdasarkan 3 komponen utama: 
+                <span class="highlight">Front-End, Back-End, dan Database.</span>
+            </p>
+        </div>
+    </div>
+
+    <h2>🚀 Tahapan Belajar Web Development</h2>
+
+    <div class="step"><i class="fas fa-code"></i><b>1. Pelajari dasar HTML, CSS & JavaScript</b><br>Ini fondasi utama dalam membuat tampilan website.</div>
+    <div class="step"><i class="fas fa-window-maximize"></i><b>2. Mulai dengan Frontend</b><br>Cobalah framework seperti Bootstrap atau Tailwind untuk desain UI.</div>
+    <div class="step"><i class="fas fa-database"></i><b>3. Belajar Backend</b><br>Gunakan PHP, NodeJS, atau Python Flask/Django untuk logika server.</div>
+    <div class="step"><i class="fas fa-sitemap"></i><b>4. Integrasikan Database</b><br>Gunakan MySQL atau MongoDB untuk menyimpan data pengguna.</div>
+
+    <h2>🛠 Tools Penting Untuk Pemula</h2>
+    <div class="tools">
+        <div class="tool-box"><i class="fas fa-laptop-code"></i><br>VS Code</div>
+        <div class="tool-box"><i class="fas fa-server"></i><br>XAMPP / Laragon</div>
+        <div class="tool-box"><i class="fas fa-toolbox"></i><br>GitHub</div>
+        <div class="tool-box"><i class="fas fa-feather"></i><br>Figma (UI/UX)</div>
+    </div>
+
+    <div class="tip">🔥 <strong>Pro Tips:</strong> Jangan hanya belajar teori. Buat project kecil seperti portfolio, kalkulator, atau sistem login sederhana.</div>
+
+    <!-- BACK BUTTON -->
+    <div class="button-wrap">
+        <a href="index.html#blog-section" class="btn-back">
+            <i class="fas fa-arrow-left"></i> Kembali ke Beranda
+        </a>
+    </div>
+</div>
+
+<footer>
+    © 2025 Fangga — All Rights Reserved
+</footer>
+
+</body>
+</html>

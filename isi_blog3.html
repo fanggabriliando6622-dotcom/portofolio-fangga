@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Belajar MySQL dengan Mudah</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <style>
+        body {
+            font-family:'Poppins', sans-serif;
+            background:#eef2f6;
+            margin:0;
+            color:#333;
+        }
+
+        nav {
+            background:#1f2d3d;
+            padding:14px 30px;
+            display:flex;
+            justify-content:space-between;
+            align-items:center;
+            color:white;
+            box-shadow:0 4px 10px rgba(0,0,0,0.15);
+            position:sticky;
+            top:0;
+            z-index:100;
+        }
+        nav a {
+            color:white;
+            text-decoration:none;
+            margin-left:22px;
+            font-weight:500;
+            transition:0.3s;
+        }
+        nav a:hover { color:#ffc107; }
+
+        .content-wrapper {
+            width:90%;
+            max-width:1100px;
+            margin:40px auto;
+            background:white;
+            padding:45px;
+            border-radius:18px;
+            box-shadow:0 5px 35px rgba(0,0,0,0.07);
+        }
+
+        .article-header h1 {
+            font-size:32px;
+            margin-bottom:5px;
+            font-weight:700;
+        }
+
+        .meta {
+            color:#666;
+            font-size:14px;
+            margin-bottom:25px;
+        }
+
+        .article-body {
+            display:flex;
+            gap:35px;
+            flex-wrap:wrap;
+        }
+
+        .article-body img {
+            width:38%;
+            min-width:260px;
+            border-radius:12px;
+            border:4px solid #e6eef3;
+            transition:0.4s;
+        }
+
+        .article-body img:hover { transform:scale(1.03); }
+
+        .text {
+            flex:1;
+            text-align:justify;
+            line-height:1.8;
+            font-size:16px;
+        }
+
+        .highlight {
+            background:#d7f4ff;
+            padding:6px 8px;
+            border-radius:6px;
+            font-weight:600;
+        }
+
+        h2 {
+            margin-top:35px;
+            color:#1f2d3d;
+            font-size:22px;
+        }
+
+        .cmd {
+            background:#000;
+            color:#00ff9d;
+            padding:15px;
+            border-radius:10px;
+            font-family:monospace;
+            margin:18px 0;
+            font-size:15px;
+        }
+
+        ul {
+            padding-left:0;
+        }
+        ul li {
+            list-style:none;
+            margin-bottom:10px;
+            padding:10px 12px;
+            background:#f6f8fa;
+            border-radius:8px;
+            display:flex;
+            gap:10px;
+            align-items:center;
+        }
+        ul li i {
+            color:#00b4d8;
+        }
+
+        .box {
+            background:#f7fbff;
+            padding:20px;
+            border-left:6px solid #0096c7;
+            margin-top:20px;
+            border-radius:12px;
+        }
+
+        .examples {
+            display:grid;
+            grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+            gap:20px;
+            margin-top:15px;
+        }
+
+        .sql-card {
+            background:#fffceb;
+            border-radius:12px;
+            padding:15px;
+            border:2px solid #ffe8a3;
+            transition:0.3s;
+            font-weight:600;
+        }
+
+        .sql-card:hover {
+            transform:translateY(-5px);
+            border-color:#ffc107;
+        }
+
+        /* TIP */
+        .tip {
+            background:#e8ffe8;
+            padding:15px;
+            border-radius:10px;
+            border-left:6px solid #28a745;
+            margin-top:25px;
+        }
+
+        .button-wrap { text-align:center; margin-top:40px; }
+        .btn-back {
+            background:#1f2d3d;
+            color:white;
+            padding:12px 25px;
+            border-radius:10px;
+            text-decoration:none;
+            font-size:16px;
+            transition:0.3s;
+        }
+        .btn-back:hover { background:#000e1a; }
+
+        footer {
+            text-align:center;
+            padding:20px;
+            margin-top:50px;
+            color:#777;
+            font-size:14px;
+        }
+    </style>
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav>
+    <div class="logo">🗄 MySQL Guide</div>
+    <div>
+        <a href="index.html">Beranda</a>
+        <a href="#blog-section">Artikel</a>
+    </div>
+</nav>
+
+<!-- MAIN CONTENT -->
+<div class="content-wrapper">
+    <div class="article-header">
+        <h1>Belajar MySQL Dengan Mudah</h1>
+        <p class="meta">📅 4 Desember 2025 • ✍️ Fangga • ⭐ Pemula Friendly</p>
+    </div>
+
+    <div class="article-body">
+        <img src="images/download (1).jpg">
+
+        <div class="text">
+            <p>
+                <strong>MySQL</strong> adalah salah satu database paling populer di dunia dan digunakan untuk menyimpan data aplikasi seperti 
+                <span class="highlight">website, toko online, sistem sekolah, aplikasi mobile, hingga game online.</span>
+            </p>
+
+            <p>
+                Belajar MySQL sangat penting jika kamu ingin menjadi <strong>Web Developer, Backend Developer, atau Software Engineer.</strong>
+            </p>
+        </div>
+    </div>
+
+    <h2>📌 Apa yang Kamu Pelajari di MySQL?</h2>
+    <ul>
+        <li><i class="fas fa-database"></i> Cara membuat database dan tabel</li>
+        <li><i class="fas fa-file-import"></i> Insert data (Tambah data)</li>
+        <li><i class="fas fa-edit"></i> Update data</li>
+        <li><i class="fas fa-trash"></i> Delete data</li>
+        <li><i class="fas fa-search"></i> Query untuk mencari data</li>
+    </ul>
+
+    <h2>🧪 Perintah MySQL Dasar</h2>
+
+    <div class="box">
+        <p><strong>✔ Membuat Database:</strong></p>
+        <div class="cmd">CREATE DATABASE sekolah;</div>
+
+        <p><strong>✔ Membuat Tabel:</strong></p>
+        <div class="cmd">
+            CREATE TABLE siswa (<br>
+            &nbsp;&nbsp;id INT AUTO_INCREMENT PRIMARY KEY,<br>
+            &nbsp;&nbsp;nama VARCHAR(50),<br>
+            &nbsp;&nbsp;kelas VARCHAR(10)<br>
+            );
+        </div>
+
+        <p><strong>✔ Menambahkan Data:</strong></p>
+        <div class="cmd">INSERT INTO siswa (nama, kelas) VALUES ('Fangga', 'XI RPL');</div>
+    </div>
+
+    <h2>🔥 Contoh Query Populer</h2>
+
+    <div class="examples">
+        <div class="sql-card">SELECT * FROM siswa;</div>
+        <div class="sql-card">UPDATE siswa SET kelas='XII RPL' WHERE id=1;</div>
+        <div class="sql-card">DELETE FROM siswa WHERE id=1;</div>
+    </div>
+
+    <div class="tip">
+        💡 <strong>Tips:</strong> Jangan hanya baca teori. Coba langsung di <strong>phpMyAdmin, MySQL Workbench, atau Laragon</strong>.
+    </div>
+
+    <!-- Button -->
+    <div class="button-wrap">
+        <a href="index.html#blog-section" class="btn-back">
+            <i class="fas fa-arrow-left"></i> Kembali ke Beranda
+        </a>
+    </div>
+</div>
+
+<footer>
+    © 2025 Fangga — All Rights Reserved
+</footer>
+
+</body>
+</html>
